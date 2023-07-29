@@ -3,7 +3,7 @@
 		<h2 class="text-2xl font-medium md:text-4xl" id="about">About Me</h2>
 		<p class="text-slate-500 md:text-lg">My introduction</p>
 	</div>
-	<div class="mx-auto max-w-2xl text-slate-700 md:mt-8 md:text-lg">
+	<div class="mx-auto max-w-3xl text-slate-700 md:mt-8 md:text-lg">
 		<p>
 			Entered the software engineering field from August, 2019. Proficient in Javascript and have
 			experience with modern UI frameworks like Svelte, React, Vue, Alpine and Meta framework like

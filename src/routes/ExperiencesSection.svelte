@@ -62,7 +62,7 @@
 	<div class="h-[360px] sm:h-64">
 		{#if tabCondition === "work"}
 			<div
-				class="mx-auto grid max-w-2xl text-slate-700 md:mt-8 md:text-lg"
+				class="mx-auto grid max-w-3xl text-slate-700 md:mt-8 md:text-lg"
 				in:fly={{ x: -100, duration: 500, delay: 300 }}
 				out:fly={{ x: 100, duration: 300 }}
 			>
