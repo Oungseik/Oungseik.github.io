@@ -7,14 +7,14 @@
 @layer base {
 	:root {
 		scroll-behavior: smooth;
-		scroll-padding-top: 64px;
+		scroll-padding-top: 80px;
 	}
 
-	@media (min-width: 768px) {
-		:root {
-			scroll-padding-top: 84px;
-		}
-	}
+	/* @media (min-width: 768px) { */
+	/* 	:root { */
+	/* 		scroll-padding-top: 150px; */
+	/* 	} */
+	/* } */
 
 	body {
 		font-family: Poppins, Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen,

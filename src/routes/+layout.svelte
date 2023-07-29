@@ -1,14 +1,33 @@
 <script lang="ts">
 	import "../app.css";
-	import { page } from "$app/stores";
+
+	import { onMount } from "svelte";
+	import { isPageTop } from "$lib/store/pageTopStore";
+	let activeSection = "";
 
 	const navs = [
-		{ url: "/#about", name: "About" },
-		{ url: "/#experiences", name: "Experiences" },
-		{ url: "/#projects", name: "Projects" },
-		{ url: "/#skills", name: "Skills" },
-		{ url: "/blogs", name: "Blogs" },
+		{ url: "/#about", name: "about" },
+		{ url: "/#experiences", name: "experiences" },
+		{ url: "/#projects", name: "projects" },
+		{ url: "/#skills", name: "skills" },
+		{ url: "/blogs", name: "blogs" },
 	];
+
+	onMount(() => {
+		window.addEventListener("scroll", () => {
+			$isPageTop = window.scrollY < 500;
+
+			const sections = document.querySelectorAll("h2[id]") as NodeListOf<HTMLElement>;
+			sections.forEach((section) => {
+				const sectionHeight = section.offsetHeight;
+				const sectionTop = section.offsetTop - 84;
+
+				if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+					activeSection = section.id;
+				}
+			});
+		});
+	});
 </script>
 
 <nav
@@ -39,12 +58,10 @@
 					{#each navs as nav (nav.url)}
 						<li>
 							<a
-								class={`block px-6 py-2 font-medium transition-colors duration-300 hover:bg-slate-200 hover:text-sky-600 md:px-4 md:text-lg md:hover:bg-inherit md:hover:text-sky-400 ${
-									$page.url.pathname + $page.url.hash === nav.url &&
-									"bg-slate-200 text-sky-600 md:bg-inherit md:text-sky-300"
+								class={`block px-6 py-2 font-medium capitalize transition-colors hover:bg-slate-200 hover:text-sky-600 md:px-4 md:text-lg md:hover:bg-inherit md:hover:text-sky-400 ${
+									activeSection === nav.name && "text-sky-300"
 								}`}
-								href={nav.url}
-								aria-current={`${$page.url.pathname}${$page.url.hash}` === nav.url}>{nav.name}</a
+								href={nav.url}>{nav.name}</a
 							>
 						</li>
 					{/each}

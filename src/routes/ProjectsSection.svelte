@@ -46,6 +46,7 @@
 								class="transition duration-300 group-hover:scale-110"
 								src={project.image}
 								alt={project.name}
+								loading="lazy"
 							/>
 						</div>
 						<div class="font-sm px-4 py-4">

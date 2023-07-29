@@ -1,22 +1,19 @@
 <script lang="ts">
 	import { onMount } from "svelte";
+	import { isPageTop } from "$lib/store/pageTopStore";
 
 	let gotoPageTop: () => void;
-	let isPageTop = true;
 
 	onMount(() => {
 		gotoPageTop = function () {
 			window.scrollTo(0, 0);
 		};
-		window.addEventListener("scroll", () => {
-			isPageTop = window.scrollY < 500;
-		});
 	});
 </script>
 
 <div
-	class="sticky bottom-4 mb-4 ml-auto mr-2 w-fit rounded-lg bg-sky-700 text-white transition duration-300 hover:bg-sky-600 md:mr-20 {isPageTop &&
-		'opacity-0 -z-50'}"
+	class="sticky bottom-4 mb-4 ml-auto mr-2 w-fit rounded-lg bg-sky-700 text-white transition duration-300 hover:bg-sky-600 md:mr-20 {$isPageTop &&
+		'-z-50 opacity-0'}"
 >
 	<button on:click={gotoPageTop} class="px-2 pt-2">
 		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
