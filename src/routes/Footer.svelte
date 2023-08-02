@@ -95,6 +95,6 @@
 				</li>
 			</ul>
 		</div>
-		<p class="text-center text-slate-300">Power by SvelteKit</p>
+		<p class="mt-6 text-center text-slate-300 md:mt-12">Power by SvelteKit</p>
 	</div>
 </footer>
