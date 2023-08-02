@@ -1,4 +1,4 @@
-<section class="px-4 py-10 md:px-10 md:py-28">
+<section class="px-4 py-14 md:px-10 md:py-28">
 	<div class="mb-6 text-center">
 		<h2 class="text-2xl font-medium md:text-4xl" id="about">About Me</h2>
 		<p class="text-slate-500 md:text-lg">My introduction</p>

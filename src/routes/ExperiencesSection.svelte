@@ -3,7 +3,7 @@
 	let tabCondition = "education";
 </script>
 
-<section class="overflow-hidden px-4 py-10 pt-0 md:px-10 md:py-28 md:pt-0">
+<section class="overflow-hidden px-4 py-14 pt-0 md:px-10 md:py-28 md:pt-0">
 	<div class="mb-6 text-center">
 		<h2 class="text-2xl font-medium md:text-4xl" id="experiences">Education &amp; Experiences</h2>
 		<p class="text-slate-500 md:text-lg">My personal journey</p>
@@ -59,7 +59,7 @@
 		</button>
 	</div>
 
-	<div class="h-[360px] sm:h-64">
+	<div class="h-[440px] sm:h-64">
 		{#if tabCondition === "work"}
 			<div
 				class="mx-auto grid max-w-3xl text-slate-700 md:mt-8 md:text-lg"

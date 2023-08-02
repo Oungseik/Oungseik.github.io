@@ -30,7 +30,7 @@
 	];
 </script>
 
-<section class="overflow-hidden px-4 py-10 pt-0 md:px-10 md:py-20">
+<section class="overflow-hidden px-4 py-14 pt-0 md:px-10 md:py-20">
 	<div class="mx-auto max-w-3xl">
 		<div class="mb-6 text-center">
 			<h2 class="text-2xl font-medium md:text-4xl" id="projects">Projects &amp; Portfolio</h2>
