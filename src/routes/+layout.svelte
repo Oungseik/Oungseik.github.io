@@ -3,37 +3,6 @@
 
 	import { onMount } from "svelte";
 	import { isPageTop } from "$lib/store/pageTopStore";
-	// import { page } from "$app/stores";
-
-	// import * as siteConfig from "$lib/siteConfig";
-
-	// export let metadata = {
-	// 	title: { default: siteConfig.title, template: `${siteConfig.subTitle} | ${siteConfig.title}` },
-	// 	description: siteConfig.description,
-	// 	robots: siteConfig.robots,
-	// 	keywords: siteConfig.keywords,
-	// 	icons: {
-	// 		icon: "/favicon/favicon.ico",
-	// 		shourtcut: "/favicon/favicon-16x16.png",
-	// 		apple: "/favicon/apple-touch-icon.png",
-	// 	},
-	// 	manifest: "/favicon/site.webmanifest",
-	// 	openGraph: {
-	// 		card: "summary_large_image",
-	// 		title: siteConfig.title,
-	// 		description: siteConfig.description,
-	// 		images: `${siteConfig.url}/images/og.jpg`,
-	// 		// creator: ""
-	// 	},
-	// 	twitter: {
-	// 		card: "summary_large_image",
-	// 		title: siteConfig.title,
-	// 		description: siteConfig.description,
-	// 		images: `${siteConfig.url}/images/og.jpg`,
-	// 		// creator: 'Oung Seik Nyan',
-	// 	},
-	// 	authors: [{ name: "", url: "" }],
-	// };
 
 	let activeSection = "";
 
@@ -62,20 +31,9 @@
 	});
 </script>
 
-<!-- <svelte:head> -->
-<!-- 	{#key $page.route} -->
-<!-- 		<title>{siteConfig.subTitle ? metadata.title.template : metadata.title.default}</title> -->
-<!-- 		<meta name="description" content={metadata.description} /> -->
-<!-- 		<meta name="keywords" content={metadata.keywords} /> -->
-<!-- 		<meta name="robots" content={metadata.robots} /> -->
-<!-- 		{#each Object.entries(metadata.openGraph) as [k, v] (k)} -->
-<!-- 			<meta property="og:{k}" content={v} /> -->
-<!-- 		{/each} -->
-<!-- 		{#each Object.entries(metadata.twitter) as [k, v] (k)} -->
-<!-- 			<meta property="twitter:{k}" content={v} /> -->
-<!-- 		{/each} -->
-<!-- 	{/key} -->
-<!-- </svelte:head> -->
+<svelte:head>
+	<title>Oung Seik Nyan</title>
+</svelte:head>
 
 <nav
 	class="sticky top-0 z-50 flex items-center justify-between bg-slate-700 px-4 py-2 text-slate-100 shadow-md shadow-gray-400 md:items-baseline md:px-6 lg:px-10"
