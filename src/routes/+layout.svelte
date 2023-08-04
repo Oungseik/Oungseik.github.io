@@ -4,8 +4,6 @@
 	import { onMount } from "svelte";
 	import { isPageTop } from "$lib/store/pageTopStore";
 
-	export const prerender = true;
-
 	let activeSection = "";
 
 	const navs = [
