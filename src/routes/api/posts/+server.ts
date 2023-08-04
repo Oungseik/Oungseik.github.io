@@ -5,7 +5,8 @@ import fs from "fs/promises";
 import process from "node:process";
 import fm from "front-matter";
 
-const INTERVAL = 1000 * 60 * 60 * 24 * 7; // a week
+// const INTERVAL = 1000 * 60 * 60 * 24 * 7; // a week
+const INTERVAL = 0; // a week
 
 const postsDB: PostsDB = {
   posts: [],

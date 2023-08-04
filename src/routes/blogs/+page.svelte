@@ -20,20 +20,45 @@
 		Latest Posts
 	</h2>
 
-	<ul class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
+	<ul class="grid auto-rows-fr gap-4 sm:grid-cols-2 md:gap-8">
 		{#each data.latestPosts as post}
 			<li>
 				<a
 					href="/blogs/{post.slug}"
-					class="flex overflow-hidden rounded-md bg-slate-200 shadow-md transition duration-300 hover:shadow-none sm:flex-col"
+					class="relative flex h-full overflow-hidden rounded-md bg-slate-200 shadow-md transition duration-300 hover:shadow-none sm:flex-col"
 				>
-					<div class="w-1/2 sm:w-auto">
-						<img src="/blog-posts/{post.slug}/{post.mainImage}" alt="" />
-					</div>
-					<div class="w-1/2 px-4 py-2 sm:w-auto">
-						<h3>{post.title}</h3>
-						<p>{post.description}</p>
-						<p>{formatDate(post.date)}</p>
+					<img
+						class="absolute h-full w-full"
+						src="/blog-posts/{post.slug}/{post.mainImage}"
+						alt="sending email"
+					/>
+					<div class="absolute h-full w-full bg-gray-900/75" />
+
+					<div class="relative z-30 px-4 py-4 text-white">
+						<h3 class="text-lg">{post.title}</h3>
+						<p class="mb-4 text-sm text-slate-200 md:mb-6">
+							<span class="inline-flex items-center gap-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+									><path
+										fill="currentColor"
+										d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z"
+									/></svg
+								>
+								{formatDate(post.date)}
+							</span>
+							<span class="inline-flex items-center gap-1 pl-2">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+									><path
+										fill="currentColor"
+										d="M12 20a8 8 0 0 0 8-8a8 8 0 0 0-8-8a8 8 0 0 0-8 8a8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10a10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67l-.75 1.23L11 13V7h1.5Z"
+									/></svg
+								>
+								{post.estimateRead}
+							</span>
+						</p>
+						<p class="line-clamp-3 text-slate-200">
+							{post.description}
+						</p>
 					</div>
 				</a>
 			</li>

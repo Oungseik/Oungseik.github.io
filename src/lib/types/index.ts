@@ -7,6 +7,7 @@ export type Post = {
   mainImage: string,
   images?: string[],
   date: string;
+  estimateRead: string,
   categories: Categories[];
   published: boolean;
 };
