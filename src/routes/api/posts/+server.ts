@@ -12,14 +12,16 @@ const postsDB: PostsDB = {
   lastUpdate: new Date(),
 };
 
-async function readFile(path: string) {
+async function readFile({ slug, path }: { slug: string, path: string }) {
   const data = await fs.readFile(path, { encoding: "utf-8" });
-  return fm(data);
+  const result: any = fm(data);
+  result.attributes.slug = slug;
+  return result;
 }
 
 async function setupDB() {
   const cwd = process.cwd();
-  const paths = (await fs.readdir(`${cwd}/static/posts`)).map((path) => `${cwd}/static/posts/${path}/index.md`);
+  const paths = (await fs.readdir(`${cwd}/static/blog-posts`)).map((slug) => ({ path: `${cwd}/static/blog-posts/${slug}/index.md`, slug: slug }));
   const data = (await Promise.allSettled(paths.map(readFile))) as {
     status: string;
     value: { attributes: Post; body: string };
@@ -29,7 +31,7 @@ async function setupDB() {
   return function getPosts() {
     return postsDB.posts
       .filter((post) => post.published)
-      .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   };
 }
 
