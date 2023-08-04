@@ -29,7 +29,7 @@
 				>
 					<img
 						class="absolute h-full w-full"
-						src="/blog-posts/{post.slug}/{post.mainImage}"
+						src="/images/posts/{post.mainImage}"
 						alt="sending email"
 					/>
 					<div class="absolute h-full w-full bg-gray-900/75" />
