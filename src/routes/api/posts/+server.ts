@@ -3,6 +3,7 @@ import type { PostsDB, Post } from "$lib/types";
 import { json } from "@sveltejs/kit";
 import fs from "fs/promises";
 import process from "node:process";
+import path from "node:path";
 import fm from "front-matter";
 
 // const INTERVAL = 1000 * 60 * 60 * 24 * 7; // a week
@@ -22,7 +23,7 @@ async function readFile({ slug, path }: { slug: string, path: string }) {
 
 async function setupDB() {
   const cwd = process.cwd();
-  const paths = (await fs.readdir(`${cwd}/static/blog-posts`)).map((slug) => ({ path: `${cwd}/static/blog-posts/${slug}/index.md`, slug: slug }));
+  const paths = (await fs.readdir(path.join(cwd, "static", "blog-posts"))).map((slug) => ({ path: path.join(cwd, "static", "blog-posts", slug, "index.md"), slug: slug }));
   const data = (await Promise.allSettled(paths.map(readFile))) as {
     status: string;
     value: { attributes: Post; body: string };
