@@ -23,8 +23,8 @@ async function readFile({ slug, path }: { slug: string; path: string }) {
 
 async function setupDB() {
   const cwd = process.cwd();
-  const paths = (await fs.readdir(path.join(cwd, "posts"))).map((slug) => ({
-    path: path.join(cwd, "posts", slug),
+  const paths = (await fs.readdir(path.join(cwd, "static", "posts"))).map((slug) => ({
+    path: path.join(cwd, "static", "posts", slug),
     slug: slug.replace(/\.md$/, ""),
   }));
   const data = (await Promise.allSettled(paths.map(readFile))) as {
