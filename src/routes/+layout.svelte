@@ -33,6 +33,7 @@
 
 <svelte:head>
 	<title>Oung Seik Nyan</title>
+	<meta name="author" content="Aung Thu Win (Oung Seik Nyan)" />
 </svelte:head>
 
 <nav
