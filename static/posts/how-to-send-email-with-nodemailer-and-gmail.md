@@ -10,8 +10,6 @@ categories:
 published: true
 ---
 
-# How to Send Email with Nodemailer and Gmail
-
 Hey friends! 👋
 
 ```ts
