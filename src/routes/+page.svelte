@@ -16,7 +16,7 @@
 		name="keywords"
 		content="Aung Thu Win, Oung Seik Nyan, Aung Thu Win's Website, Oung Seik Nyan's Website, Aung Thu Win's skills"
 	/>
-	<meta property="og:title" content="The Rock" />
+	<meta property="og:title" content="Oung Seik Nyan's personal website" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://oungseik-github-io.vercel.app/" />
 	<meta property="og:image" content="https://oungseik-github-io.vercel.app/images/og.jpg" />
