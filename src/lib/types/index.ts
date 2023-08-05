@@ -9,6 +9,8 @@ export type Post = {
 	date: string;
 	estimateRead: string;
 	categories: Categories[];
+	author: string;
+	keywords: string[];
 	published: boolean;
 };
 

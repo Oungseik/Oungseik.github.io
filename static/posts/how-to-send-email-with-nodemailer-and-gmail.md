@@ -10,7 +10,7 @@ categories:
 published: true
 ---
 
-## Markdown
+# How to Send Email with Nodemailer and Gmail
 
 Hey friends! 👋
 
