@@ -9,10 +9,6 @@
 	<meta name="description" content={data.meta.description} />
 	<meta name="keywords" content={data.meta.keywords?.join(", ")} />
 	<meta name="author" content={data.meta.author} />
-	<link
-		rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css"
-	/>
 
 	<meta property="og:title" content={data.meta.title} />
 	<meta property="og:type" content="article" />

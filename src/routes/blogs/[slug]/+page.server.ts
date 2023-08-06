@@ -10,7 +10,7 @@ import fs from "fs/promises";
 import process from "process";
 
 marked.use(markedHighlight({
-  langPrefix: 'language-',
+  langPrefix: 'hljs language-',
   highlight(code, lang) {
     const language = hljs.getLanguage(lang) ? lang : "plaintext"
     return hljs.highlight(code, { language }).value;
