@@ -13,7 +13,7 @@
 		<button
 			on:click={() => (tabCondition = "education")}
 			class={`duration-400 flex items-center gap-1 transition-colors ${
-				tabCondition === "education" && "text-sky-600"
+				tabCondition === "education" && "text-sky-700"
 			}`}
 		>
 			<svg
@@ -21,7 +21,7 @@
 				width="28"
 				height="28"
 				viewBox="0 0 48 48"
-				class={tabCondition === "education" ? "text-sky-600" : "text-slate-500"}
+				class={tabCondition === "education" ? "text-sky-700" : "text-slate-500"}
 				><g
 					fill="none"
 					stroke="currentColor"

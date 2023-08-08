@@ -1,0 +1,22 @@
+{
+  "short_name": "Oung Seik's website",
+  "name": "Oung Seik Nyan's Personal Website",
+  "description": "Personal website of Oung Seik Nyan, which show skills and includes blog posts about the tech.",
+  "icons": [
+    {
+      "src": "/icons/icon-24x24.png",
+      "sizes": "24x24",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ]
+}

@@ -94,7 +94,7 @@
 
 <slot />
 
-<footer class="bg-sky-700 px-4 pb-4 pt-10 text-slate-100 md:px-10 md:pt-20">
+<footer class="bg-sky-800 px-4 pb-4 pt-10 text-slate-100 md:px-10 md:pt-20">
 	<div class="mx-auto max-w-3xl">
 		<div class=" grid gap-y-8 md:grid-cols-3 md:grid-rows-2">
 			<div class="md:row-start-1 md:row-end-3">
@@ -137,6 +137,7 @@
 						href="https://github.com/oungseik"
 						target="_blank"
 						class="underline-offset-4 transition-colors duration-300 hover:text-slate-300"
+						aria-label="github"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -156,6 +157,7 @@
 						href="https://www.linkedin.com/in/aung-thu-win/"
 						target="_blank"
 						class="underline-offset-4 transition-colors duration-300 hover:text-slate-300"
+						aria-label="linkedin"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -175,6 +177,7 @@
 						href="https://www.facebook.com/oung.s.nyan.50552338?mibextid=ZbWKwL"
 						target="_blank"
 						class="underline-offset-4 transition-colors duration-300 hover:text-slate-300"
+						aria-label="facebook"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -191,6 +194,6 @@
 				</li>
 			</ul>
 		</div>
-		<p class="mt-6 text-center text-slate-300 md:mt-12">Power by SvelteKit</p>
+		<p class="mt-6 text-center text-slate-200 md:mt-12">Power by SvelteKit</p>
 	</div>
 </footer>

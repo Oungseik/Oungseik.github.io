@@ -123,7 +123,11 @@
 				<h3 class="text-xl font-medium">Front-end Development</h3>
 				<ul class="mt-2 flex gap-2 text-slate-600 md:gap-4">
 					{#each frontendDevelopments as fe (fe.name)}
-						<li><a href={fe.url} class="tool-tip" data-tip={fe.name}>{@html fe.icon}</a></li>
+						<li>
+							<a href={fe.url} class="tool-tip" aria-label={fe.name} data-tip={fe.name}
+								>{@html fe.icon}</a
+							>
+						</li>
 					{/each}
 				</ul>
 			</div>
@@ -132,7 +136,11 @@
 				<h3 class="text-xl font-medium">Back-end Development</h3>
 				<ul class="mt-2 flex gap-2 text-slate-600 md:gap-4">
 					{#each backendDevelopments as be (be.name)}
-						<li><a href={be.url} class="tool-tip" data-tip={be.name}>{@html be.icon}</a></li>
+						<li>
+							<a href={be.url} class="tool-tip" aria-label={be.name} data-tip={be.name}
+								>{@html be.icon}</a
+							>
+						</li>
 					{/each}
 				</ul>
 			</div>
@@ -141,7 +149,11 @@
 				<h3 class="text-xl font-medium">Programming Languages</h3>
 				<ul class="mt-2 flex gap-2 text-slate-600 md:gap-4">
 					{#each programmingLanguages as pl (pl.name)}
-						<li><a href={pl.url} class="tool-tip" data-tip={pl.name}>{@html pl.icon}</a></li>
+						<li>
+							<a href={pl.url} class="tool-tip" aria-label={pl.name} data-tip={pl.name}
+								>{@html pl.icon}</a
+							>
+						</li>
 					{/each}
 				</ul>
 			</div>
@@ -150,7 +162,11 @@
 				<h3 class="text-xl font-medium">Development Tools</h3>
 				<ul class="mt-2 flex gap-2 text-slate-600 md:gap-4">
 					{#each devTools as dt (dt.name)}
-						<li><a href={dt.url} class="tool-tip" data-tip={dt.name}>{@html dt.icon}</a></li>
+						<li>
+							<a href={dt.url} class="tool-tip" aria-label={dt.name} data-tip={dt.name}
+								>{@html dt.icon}</a
+							>
+						</li>
 					{/each}
 				</ul>
 			</div>

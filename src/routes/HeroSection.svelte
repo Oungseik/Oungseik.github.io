@@ -19,6 +19,7 @@
 						href="https://github.com/oungseik"
 						target="_blank"
 						class="duration-400 text-gray-600 transition-colors hover:text-gray-900"
+            aria-label="github"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -38,6 +39,7 @@
 						href="https://www.linkedin.com/in/aung-thu-win/"
 						target="_blank"
 						class="duration-400 text-gray-600 transition-colors hover:text-sky-600"
+            aria-label="linkedin"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -57,6 +59,7 @@
 						href="https://www.facebook.com/oung.s.nyan.50552338?mibextid=ZbWKwL"
 						target="_blank"
 						class="duration-400 text-gray-600 transition-colors hover:text-blue-600"
+            aria-label="facebook"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
