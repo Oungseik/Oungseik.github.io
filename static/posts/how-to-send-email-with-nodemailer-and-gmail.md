@@ -11,6 +11,8 @@ categories:
 published: true
 ---
 
+In this tutorial, I will show you how to send email by using the [Nodemailer]() and [Gmail]() as the email provider. 
+
 ```ts
 function greet(name: string) {
 	console.log(`Hey ${name}! 👋`);
