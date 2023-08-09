@@ -3,12 +3,12 @@
 		class="flex items-center justify-center bg-[url('/images/hero-bg-1.jpg')] bg-cover bg-center bg-no-repeat py-16 text-slate-800 md:items-start md:justify-start md:p-28 md:py-32"
 	>
 		<div class="w-80 animate-fadein opacity-0 drop-shadow sm:w-auto">
-			<h2 id="home" class="text-2xl font-medium md:text-5xl">
+			<h1 id="home" class="text-2xl font-medium md:text-5xl">
 				<p>Hello!</p>
 				<p>
 					I'm <span>Aung Thu Win</span> <span class="text-sm md:text-2xl">(Oung Seik Nyan)</span>
 				</p>
-			</h2>
+			</h1>
 			<p class="mt-2 max-w-4xl md:text-2xl">
 				I'm a Full-stack Developer, passionate in new programming languages, Linux and Mathematics.
 				Find me on...
