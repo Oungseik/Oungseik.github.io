@@ -27,16 +27,12 @@
 					href="/blogs/{post.slug}"
 					class="relative flex h-full overflow-hidden rounded-md bg-slate-200 shadow-md transition duration-300 hover:shadow-none sm:flex-col"
 				>
-					<img
-						class="absolute h-full w-full"
-						src="/images/posts/{post.mainImage}"
-						alt="sending email"
-					/>
+					<img class="absolute h-full w-full" src="/images/posts/{post.mainImage}" alt="" />
 					<div class="absolute h-full w-full bg-gray-900/75" />
 
 					<div class="relative z-30 px-4 py-4 text-white">
 						<h3 class="text-lg">{post.title}</h3>
-						<p class="mb-4 text-sm text-slate-200 md:mb-6">
+						<p class="mb-4 text-sm md:mb-6">
 							<span class="inline-flex items-center gap-1">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
 									><path
@@ -56,7 +52,7 @@
 								{post.estimateRead}
 							</span>
 						</p>
-						<p class="line-clamp-3 text-slate-200">
+						<p class="line-clamp-3">
 							{post.description}
 						</p>
 					</div>
