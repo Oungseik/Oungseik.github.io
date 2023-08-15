@@ -59,7 +59,7 @@
 		</button>
 	</div>
 
-	<div class="h-[440px] sm:h-64">
+	<div class="h-[440px]">
 		{#if tabCondition === "work"}
 			<div
 				class="mx-auto grid max-w-3xl text-slate-700 md:mt-8 md:text-lg"
