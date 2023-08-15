@@ -29,7 +29,7 @@
 	<div class="flex flex-row-reverse items-baseline md:flex-row md:items-center">
 		<button
 			class="group relative ml-auto block rounded-md p-1 transition-colors duration-300 hover:bg-slate-600 md:static md:flex md:items-end md:hover:bg-inherit"
-      aria-label="menu"
+			aria-label="menu"
 		>
 			<span class="md:hidden"
 				><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
@@ -60,7 +60,7 @@
 		<div class="md:py-1">
 			<a
 				class="block flex gap-2 px-4 py-2 transition-colors duration-300 hover:text-sky-600 md:rounded md:border-2 md:py-1 md:text-lg md:hover:border-sky-300 md:hover:text-sky-300"
-				href="#contact"
+				href="/#contact"
 			>
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 					><path
