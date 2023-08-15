@@ -25,7 +25,7 @@
 <section class="px-4 pb-8 pt-0 md:px-10 md:pb-16">
 	<div class="mx-auto max-w-3xl">
 		<div class="mb-4 text-center">
-			<h2 class="text-2xl font-medium md:text-4xl" id="projects">Contact</h2>
+			<h2 class="text-2xl font-medium md:text-4xl" id="contact">Contact</h2>
 			<p class="text-slate-500 md:text-lg">Join with me and do great things</p>
 		</div>
 		<form on:submit|preventDefault={sendEmail} on:click={clickHandler}>

@@ -15,13 +15,16 @@
 	];
 
 	onMount(() => {
+		let isMobile = window.innerWidth < 640;
+		let scrollPadding = isMobile ? 84 : 124;
+
 		window.addEventListener("scroll", () => {
 			$isPageTop = window.scrollY < 500;
 
 			const sections = document.querySelectorAll("h2[id]") as NodeListOf<HTMLElement>;
 			sections.forEach((section) => {
 				const sectionHeight = section.offsetHeight;
-				const sectionTop = section.offsetTop - 84;
+				const sectionTop = section.offsetTop - scrollPadding;
 
 				if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
 					activeSection = section.id;
@@ -78,7 +81,7 @@
 		<div class="md:py-1">
 			<a
 				class="block flex gap-2 px-4 py-2 transition-colors duration-300 hover:text-sky-600 md:rounded md:border-2 md:py-1 md:text-lg md:hover:border-sky-300 md:hover:text-sky-300"
-				href="mailto:mhemaungthuwin@gmail.com"
+				href="#contact"
 			>
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 					><path
@@ -86,7 +89,7 @@
 						d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5l-8-5h16zm0 12H4V8l8 5l8-5v10z"
 					/></svg
 				>
-				Email me</a
+				Contact</a
 			>
 		</div>
 	</div>

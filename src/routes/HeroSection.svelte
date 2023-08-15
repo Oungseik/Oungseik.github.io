@@ -1,6 +1,6 @@
 <main>
 	<section
-		class="flex items-center justify-center bg-[url('/images/hero-bg-1.jpg')] bg-cover bg-center bg-no-repeat py-16 text-slate-800 md:items-start md:justify-start md:p-28 md:py-32"
+		class="flex items-center justify-center bg-[url('/images/hero-bg-1.jpg')] bg-cover bg-center bg-no-repeat py-16 text-slate-800 sm:items-start sm:justify-start sm:p-28 sm:py-32"
 	>
 		<div class="w-80 animate-fadein opacity-0 drop-shadow sm:w-auto">
 			<h1 id="home" class="text-2xl font-medium md:text-5xl">
@@ -19,7 +19,7 @@
 						href="https://github.com/oungseik"
 						target="_blank"
 						class="duration-400 text-gray-600 transition-colors hover:text-gray-900"
-            aria-label="github"
+						aria-label="github"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@
 						href="https://www.linkedin.com/in/aung-thu-win/"
 						target="_blank"
 						class="duration-400 text-gray-600 transition-colors hover:text-sky-600"
-            aria-label="linkedin"
+						aria-label="linkedin"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@
 						href="https://www.facebook.com/oung.s.nyan.50552338?mibextid=ZbWKwL"
 						target="_blank"
 						class="duration-400 text-gray-600 transition-colors hover:text-blue-600"
-            aria-label="facebook"
+						aria-label="facebook"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
