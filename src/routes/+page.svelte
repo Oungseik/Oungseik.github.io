@@ -1,5 +1,6 @@
 <script lang="ts">
 	import AboutMeSection from "./AboutMeSection.svelte";
+	import ContactSection from "./ContactSection.svelte";
 	import ExperiencesSection from "./ExperiencesSection.svelte";
 	import HeroSection from "./HeroSection.svelte";
 	import ProjectsSection from "./ProjectsSection.svelte";
@@ -45,4 +46,5 @@
 <ExperiencesSection />
 <ProjectsSection />
 <SkillsSection />
+<ContactSection />
 <ToTheTop />

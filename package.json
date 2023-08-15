@@ -28,6 +28,7 @@
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-svelte": "^2.32.4",
 		"highlight.js": "^11.8.0",
+		"husky": "^8.0.0",
 		"marked": "^6.0.0",
 		"marked-highlight": "^2.0.1",
 		"mdsvex": "^0.11.0",
@@ -42,11 +43,11 @@
 		"tslib": "^2.6.1",
 		"typescript": "^5.1.6",
 		"vite": "^4.4.7",
-		"vitest": "^0.32.4",
-		"husky": "^8.0.0"
+		"vitest": "^0.32.4"
 	},
 	"type": "module",
 	"dependencies": {
+		"@emailjs/browser": "^3.11.0",
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"front-matter": "^4.0.2"
 	}
