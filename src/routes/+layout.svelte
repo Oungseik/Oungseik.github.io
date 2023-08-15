@@ -1,10 +1,7 @@
 <script lang="ts">
 	import "../app.css";
 
-	import { onMount } from "svelte";
-	import { isPageTop } from "$lib/store/pageTopStore";
-
-	let activeSection = "";
+	import { pageInfo } from "$lib/store/pageInfoStore";
 
 	const navs = [
 		{ url: "/#about", name: "about" },
@@ -13,25 +10,6 @@
 		{ url: "/#skills", name: "skills" },
 		{ url: "/blogs", name: "blogs" },
 	];
-
-	onMount(() => {
-		let isMobile = window.innerWidth < 640;
-		let scrollPadding = isMobile ? 84 : 124;
-
-		window.addEventListener("scroll", () => {
-			$isPageTop = window.scrollY < 500;
-
-			const sections = document.querySelectorAll("h2[id]") as NodeListOf<HTMLElement>;
-			sections.forEach((section) => {
-				const sectionHeight = section.offsetHeight;
-				const sectionTop = section.offsetTop - scrollPadding;
-
-				if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-					activeSection = section.id;
-				}
-			});
-		});
-	});
 </script>
 
 <svelte:head>
@@ -51,6 +29,7 @@
 	<div class="flex flex-row-reverse items-baseline md:flex-row md:items-center">
 		<button
 			class="group relative ml-auto block rounded-md p-1 transition-colors duration-300 hover:bg-slate-600 md:static md:flex md:items-end md:hover:bg-inherit"
+      aria-label="menu"
 		>
 			<span class="md:hidden"
 				><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
@@ -68,7 +47,7 @@
 						<li>
 							<a
 								class={`block px-6 py-2 font-medium capitalize transition-colors hover:bg-slate-200 hover:text-sky-600 md:px-4 md:text-lg md:hover:bg-inherit md:hover:text-sky-400 ${
-									activeSection === nav.name && "text-sky-300"
+									$pageInfo.activeSection === nav.name && "text-sky-400"
 								}`}
 								href={nav.url}>{nav.name}</a
 							>

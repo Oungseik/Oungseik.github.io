@@ -1,6 +1,9 @@
 <script lang="ts">
 	import type { PageServerData } from "./$types";
 	import { formatDate } from "$lib/utils";
+	import { pageInfo } from "$lib/store/pageInfoStore";
+
+	$pageInfo.activeSection = "blogs";
 
 	export let data: PageServerData;
 </script>

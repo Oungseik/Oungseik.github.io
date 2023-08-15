@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import { isPageTop } from "$lib/store/pageTopStore";
+	import { pageInfo } from "$lib/store/pageInfoStore";
 
 	let gotoPageTop: () => void;
 
@@ -12,7 +12,7 @@
 </script>
 
 <div
-	class="sticky bottom-4 mb-4 ml-auto mr-2 w-fit rounded-lg bg-sky-700 text-white transition duration-300 hover:bg-sky-600 md:mr-20 {$isPageTop &&
+	class="sticky bottom-4 mb-4 ml-auto mr-2 w-fit rounded-lg bg-sky-700 text-white transition duration-300 hover:bg-sky-600 md:mr-20 {$pageInfo.isPageTop &&
 		'-z-50 opacity-0'}"
 >
 	<button on:click={gotoPageTop} class="px-2 pt-2" aria-label="to the top">

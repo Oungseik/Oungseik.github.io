@@ -3,19 +3,29 @@
   "name": "Aung Thu Win's personal website",
   "icons": [
     {
-      "src": "/icons/icons-vector.svg",
-      "type": "image/svg+xml",
-      "sizes": "512x512"
+      "src": "/icons/os-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
     },
     {
-      "src": "/images/icons-192.png",
+      "src": "/icons/os-128x128.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "128x128"
     },
     {
-      "src": "/images/icons-512.png",
+      "src": "/icons/os-64x64.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "64x64"
+    },
+    {
+      "src": "/icons/os-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/icons/os-24x24.png",
+      "type": "image/png",
+      "sizes": "24x24"
     }
   ],
   "id": "/?source=pwa",
@@ -26,43 +36,18 @@
   "theme_color": "#3367D6",
   "shortcuts": [
     {
-      "name": "How's weather today?",
-      "short_name": "Today",
-      "description": "View weather information for today",
-      "url": "/today?source=pwa",
+      "name": "Oung Seik Nyan's Personal Blog",
+      "short_name": "blogs",
+      "description": "Blogs post about Programming, Computer Science and Web Development",
+      "url": "/blogs?source=pwa",
       "icons": [
         {
-          "src": "/images/today.png",
-          "sizes": "192x192"
-        }
-      ]
-    },
-    {
-      "name": "How's weather tomorrow?",
-      "short_name": "Tomorrow",
-      "description": "View weather information for tomorrow",
-      "url": "/tomorrow?source=pwa",
-      "icons": [
-        {
-          "src": "/images/tomorrow.png",
-          "sizes": "192x192"
+          "src": "/icons/os-256x256.png",
+          "type": "image/png",
+          "sizes": "256x256"
         }
       ]
     }
   ],
-  "description": "Weather forecast information",
-  "screenshots": [
-    {
-      "src": "/images/screenshot1.png",
-      "type": "image/png",
-      "sizes": "540x720",
-      "form_factor": "narrow"
-    },
-    {
-      "src": "/images/screenshot2.jpg",
-      "type": "image/jpg",
-      "sizes": "720x540",
-      "form_factor": "wide"
-    }
-  ]
+  "description": "Oung Seik Nyan's Personal Website"
 }

@@ -6,6 +6,33 @@
 	import ProjectsSection from "./ProjectsSection.svelte";
 	import SkillsSection from "./SkillsSection.svelte";
 	import ToTheTop from "./ToTheTop.svelte";
+
+	import { onMount } from "svelte";
+	import { pageInfo } from "$lib/store/pageInfoStore";
+
+	onMount(() => {
+		let isMobile = window.innerWidth < 640;
+		let scrollPadding = isMobile ? 80 : 120;
+
+		const scrollHandler = () => {
+			$pageInfo.isPageTop = window.scrollY < 500;
+
+			const sections = document.querySelectorAll("h2[id]") as NodeListOf<HTMLElement>;
+			sections.forEach((section) => {
+				const sectionHeight = section.offsetHeight;
+				const sectionTop = section.offsetTop - scrollPadding;
+				if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+					$pageInfo.activeSection = section.id;
+				}
+			});
+		};
+
+		window.addEventListener("scroll", scrollHandler);
+		return () => {
+			window.removeEventListener("scroll", scrollHandler);
+			$pageInfo.activeSection = "";
+		};
+	});
 </script>
 
 <svelte:head>
