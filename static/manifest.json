@@ -30,10 +30,10 @@
   ],
   "id": "/?source=pwa",
   "start_url": "/?source=pwa",
-  "background_color": "#3367D6",
+  "background_color": "#f1f5f9",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#3367D6",
+  "theme_color": "#f1f5f9",
   "shortcuts": [
     {
       "name": "Oung Seik Nyan's Personal Blog",

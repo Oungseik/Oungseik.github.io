@@ -28,11 +28,13 @@
 			<h2 class="text-2xl font-medium md:text-4xl" id="contact">Contact</h2>
 			<p class="text-slate-500 md:text-lg">Join with me and do great things</p>
 		</div>
+		<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<form on:submit|preventDefault={sendEmail} on:click={clickHandler}>
 			<fieldset class="mx-auto flex max-w-md flex-col gap-4 sm:max-w-none">
 				<div
 					class={`relative h-10 text-sm font-medium sm:h-5 ${
-						successMsg ? "text-sky-700" : errorMsg ? "py-2 sm:py-0 text-red-600" : ""
+						successMsg ? "text-sky-700" : errorMsg ? "py-2 text-red-600 sm:py-0" : ""
 					}`}
 				>
 					<p class="pl-3">
