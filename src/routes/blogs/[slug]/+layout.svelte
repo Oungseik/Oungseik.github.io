@@ -3,6 +3,7 @@
 		.hljs {
 			color: #abb2bf;
 			background: #282c34;
+      font-size: 0.875rem;
 		}
 
 		.hljs-comment,
