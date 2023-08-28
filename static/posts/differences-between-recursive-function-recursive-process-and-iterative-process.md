@@ -8,7 +8,7 @@ author: "Oung Seik Nyan"
 estimateRead: 15mins read
 categories:
   - Functional Programming 
-published: false
+published: true
 ---
 
 The most confusing terms for new comers in functional programming field is what are recursion, recursive process, iterative process and how to analyze the way of processes generate. In this article I will explain you how to spot the recursive process and iterative process.
