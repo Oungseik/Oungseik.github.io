@@ -17,7 +17,7 @@
 	</div>
 </main>
 
-{#if data.latestPosts.length}
+{#if data.latestPosts?.length}
 	<section class="md:py-18 mx-auto max-w-4xl px-4 py-14 md:px-10">
 		<h2 class="relative mb-6 py-1 pl-3 text-2xl font-medium text-slate-800 md:pl-4">
 			<span class="absolute left-0 top-0 h-full w-1 bg-blue-800" />
