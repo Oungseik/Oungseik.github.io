@@ -41,11 +41,13 @@
 			{#each projects as project (project.name)}
 				<li class="group overflow-hidden rounded-lg bg-slate-100 shadow-md">
 					<a href={project.url}>
-						<div class="overflow-hidden">
+						<div class="h-36 w-64 overflow-hidden">
 							<img
-								class="transition duration-300 group-hover:scale-110"
+								class="transition duration-300 object-fit group-hover:scale-110"
 								src={project.image}
 								alt={project.name}
+								width="250"
+								height="140"
 								loading="lazy"
 							/>
 						</div>

@@ -31,7 +31,13 @@
 						href="/blogs/{post.slug}"
 						class="relative flex h-full overflow-hidden rounded-md bg-slate-200 shadow-md transition duration-300 hover:shadow-none sm:flex-col"
 					>
-						<img class="absolute h-full w-full" src="/images/posts/{post.mainImage}" alt="" />
+						<img
+							class="absolute h-full w-full"
+							width="400"
+							height="240"
+							src="/images/posts/{post.mainImage}"
+							alt=""
+						/>
 						<div class="absolute h-full w-full bg-gray-900/75" />
 
 						<div class="relative z-30 px-4 py-6 text-white">
